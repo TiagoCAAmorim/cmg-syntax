@@ -2,9 +2,11 @@
   "name": "cmg-syntax",
   "displayName": "CMG Syntax",
   "description": "CMG simulation files syntax highlighting",
+  "repository": "https://github.com/TiagoCAAmorim/cmg-syntax",
+	"publisher": "tiagoamorim",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.85.0"
+    "vscode": "^1.80.0"
   },
   "categories": [
     "Programming Languages"

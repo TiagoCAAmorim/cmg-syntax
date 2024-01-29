@@ -1,0 +1,46 @@
+{
+    
+"material-icon-theme.files.associations": {
+    "*.dat": "document",
+    "*.inc": "yaml",
+    
+    "*.geo": "taskfile",
+    "*.grid": "3d",
+    "*.flt": "stencil",
+    
+    "*.pvt": "test-ts",
+    "*.kr": "elm",
+    
+    "*.well": "tcl",
+    "*.hist": "changelog",
+    "*.sch": "esbuild",
+
+    "*.log": "credits",
+    "*.fhf": "database"
+},
+"material-icon-theme.folders.associations": {
+    "dat": "interface",
+    "inc": "class",
+    
+    "grid": "webpack",
+    "geo": "webpack",
+    "ftl": "scala",
+
+    "kr": "layout",
+    "pvt": "test",
+    
+    "wells": "custom",
+    "hist": "update",
+    "sch": "job"
+},
+"files.associations": {
+    "*.well": "cmg",
+    "*.sch": "cmg",
+    "*.hist": "cmg",
+    "*.pvt": "cmg",
+    "*.kr": "cmg",
+    "*.geo": "cmg",
+    "*.flt": "cmg"
+}
+
+}

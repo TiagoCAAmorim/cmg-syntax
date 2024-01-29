@@ -1,0 +1,25 @@
+{
+  "name": "cmg-syntax",
+  "displayName": "CMG Syntax",
+  "description": "CMG simulation files syntax highlighting",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "cmg",
+      "aliases": ["CMG", "cmg"],
+      "extensions": [".dat",".inc"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "cmg",
+      "scopeName": "source.cmg",
+      "path": "./syntaxes/cmg.tmLanguage.json"
+    }]
+  }
+}

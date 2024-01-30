@@ -3,13 +3,24 @@
   "displayName": "CMG Syntax",
   "description": "CMG simulation files syntax highlighting",
   "repository": "https://github.com/TiagoCAAmorim/cmg-syntax",
-	"publisher": "tiagoamorim",
-  "version": "0.0.2",
+	"publisher": "tiagocaamorim",
+  "version": "0.0.3",
   "engines": {
-    "vscode": "^1.80.0"
+    "vscode": "^1.50.0"
   },
   "categories": [
     "Programming Languages"
+  ],
+  "icon": "logo.png",
+  "galleryBanner": {
+    "color": "#1e1e1e",
+    "theme": "dark"
+  },
+  "keywords": [
+    "cmg",
+    "imex",
+    "gem",
+    "simulator"
   ],
   "contributes": {
     "languages": [{

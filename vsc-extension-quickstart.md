@@ -29,3 +29,5 @@
 * To share your extension with the world, read on https://code.visualstudio.com/docs about publishing an extension.
     * https://code.visualstudio.com/api/working-with-extensions/publishing-extension
     * Create vsix: vsce package
+    * Publish: vsce publish
+    * https://marketplace.visualstudio.com/manage/publishers/tiagocaamorim

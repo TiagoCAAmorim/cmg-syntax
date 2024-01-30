@@ -27,6 +27,10 @@ It is not a strict requirement, but it is recommended to use the [One Monokai](h
 
 ## Release Notes
 
+### 0.0.3
+
+Created logo for extension.
+
 ### 0.0.2
 
 Adjusted color scheme for better compatibility with other themes.

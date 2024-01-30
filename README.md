@@ -27,6 +27,11 @@ It is not a strict requirement, but it is recommended to use the [One Monokai](h
 
 ## Release Notes
 
+### 0.0.4
+
+Automatically reads keywords and options from CMG manuals.
+Updated keywords and options from 2022.10 IMEX, GEM and STARS manuals.
+
 ### 0.0.3
 
 Created logo for extension.

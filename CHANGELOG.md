@@ -4,6 +4,13 @@ All notable changes to the "cmg-syntax" extension will be documented in this fil
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [0.0.4] - 2024-01-30
+
+### Changed
+
+- Automatically reads keywords and options from CMG manuals.
+- Updated keywords and options from 2022.10 IMEX, GEM and STARS manuals.
+
 ## [0.0.3] - 2024-01-30
 
 ### Added

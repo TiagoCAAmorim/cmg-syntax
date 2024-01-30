@@ -25,13 +25,13 @@
 				"name": "variable.parameter",
 				"match": "(?<=TRGVARS?)\\s+'[^']+'(?=(\\s|$))"
 			},{
-				"name": "support.type",
+				"name": "support.class",
 				"match": "^\\s*\\*?TRGVARS?(?=\\s+'[^']+'(\\s|$))"
 			},{
 				"name": "variable.parameter",
 				"match": "(?<='VARSUB:)[^']+'"
 			},{
-				"name": "support.type",
+				"name": "support.class",
 				"match": "(?<=')VARSUB:"
 			},{
 				"name": "variable.parameter",
@@ -43,12 +43,12 @@
 		},
 
 		"strings": {
-			"name": "string.quoted.double.cmg",
+			"name": "string",
 			"begin": "'",
 			"end": "'",
 			"patterns": [
 				{
-					"name": "constant.character.escape.cmg",
+					"name": "constant.language",
 					"match": ""
 				}
 			]
@@ -56,13 +56,13 @@
 
 		"numbers": {
 			"patterns": [{
-				"name": "keyword.operator",
+				"name": "entity.name.tag",
 				"match": "(?<=\\s)([=+\\-\\\\\\*/><]|\\*?(AND|OR)\\d*)(?=\\s)"
 			},{
-				"name": "token.warn-token",
+				"name": "markup.changed",
 				"match": "(^|\\s)\\d+(:\\d+)?\\s+\\d+(:\\d+)?\\s+\\d+(:\\d+)?(?=(\\s|$))"
 			},{
-				"name": "token.warn-token",
+				"name": "markup.changed",
 				"match": "(^|\\s)\\d+(:\\d+)?,\\d+(:\\d+)?,\\d+(:\\d+)?(?=(\\s|$))"
 			},{
 				"name": "constant.numeric",
@@ -82,7 +82,7 @@
 
 		"main-keyword": {
 			"patterns": [{
-				"name": "token.error-token",
+				"name": "entity.name.tag",
 				"match": "^\\s*\\*?(TITLE1|GRID|MODEL|ROCKFLUID|INITIAL|NUMERICAL|RUN|STOP)(?=(\\s*$|\\s+\\*\\*))"
 			}]
 		},
@@ -96,7 +96,7 @@
 
 		"date": {
 			"patterns": [{
-				"name": "constant.character",
+				"name": "entity.name.class",
 				"match": "^\\s*\\*?(DATE\\s+\\d{4}\\s+\\d{1,2}\\s+([0-9]*\\.?[0-9]+|[0-9]+\\.)([eE][-+]?[0-9]+)?|TIME\\s+\\+?([0-9]*\\.?[0-9]+|[0-9]+\\.)([eE][-+]?[0-9]+)?)(?=(\\s*$|\\s+\\*\\*))"
 			}]
 		},
@@ -204,157 +204,7 @@
 				"name": "entity.name.type",
 				"match": "(?<=(\\s|^))\\*?(MOD|ALL|IJK|CON|KVAR|ARRAY|BG|OPEN|ATTACHTO|PROD|GASI|WATI|PMAINT|PMSECT|PMTARG|PMCOEF|WATER|FLOW-TO|FLOW-FROM|GEOA|K|REFLAYER|IP|INGUIDE|PRESS|DATUMPRES|SATUR|GMOLAR|BLOCK_CENTER|COMP|CORNER|GRID|PRES|DROP|SO|SW|SG|POROS|KRO|KRW|BSORW|BSORG|VISO|VISG|VISW|DENO|DENG|DENW|ZALL|XALL|YALL|WELL|TIME|LAYER|DOWNHOLE|RES|BRIEF|NONE|ITER|SI|ON|EQUALSI|TNEXT|PR|BLACKOIL|HZYT|LINEAR|MAX|ST(O|G|L|W)-?(RP|CP|RI|CI)?|GTARGET|RECYCLE|GAS|OIL|WATER|RECFRC|FRACTURE|MATRIX|MDPTCN|KRG|X|Y|Z|STAB \\*?AND-THRESH|VERT|GEO|BHW|BHO|BHL|BHG|BHF|PERM|SR3|IMRF|SR3_IMRF|INTO|SATP|STRMLN|VELOCRC|CRIT|ON_CTRLLUMP|SECTOR|TABLES|MODSI|WELL-SECTOR|EG|BG|ZG|WATER_OIL|DEPTH_AVE|EQUIL|INITIAL|I|J|K|MOBWEIGHT|CART|DOWN|OILWATER|BOT|VOT|THRESH|PBUB|PDW|PARASOL|RATE|BLOCK_CENTER|PPMWT|PPMVOL|MOLAL|MOLAR|WTFRAC|MOLFRAC|AQUEOUS|ROWE-CHOU|KESTIN|NUMERALL|POLYMER|NONLIN(1|2)|SALIN|COMPRW|MAXVAL|MINVAL|MAXRES|RANGE1|MDCONS|ON_ELAPSED|TRELTD|TEST_TIMES|APPLY_TIMES|INCREMENT|AVRGTIME|MPVS|M\\d+|BHP|MULTO?|GOR|WCUT|SPECIAL|WELLPI|ON_GROUP|ON_WELL|TABLE|CYCLING|CONT|REPEAT|MIN|WHP|SHUTIN|PRIOR-?(CTRL|NUMER|DENOM|RATE)?|OPT|MT|FR|WISTAT|EXTP|WAT|LIQ|GLR|LFG|GK|DEFAULT|GUIDE|OFF|SIMPERF|RANGE2|WTHTEMP|DTIME|CPP|AUTOWELL|BLOCKP9|NEW|ADD|DEL|MOV|CPUTIME|SOLVER|MDEXTR|WI|WELLNN|FETKOVITCH|MAXGAS|TDATE|TIMSIM|ONFR|WGR|REGION|IDIR|JDIR|KDIR|STONE1|FULLY-MIXED|WATER_OIL_GAS)(?=(\\s|$))"
 			}]
-		},
-
-		"tests": {
-			"patterns": [{
-				"name": "comment",
-				"match": "comment"
-			},{
-				"name":"constant",
-				"match":"constant"
-			},{
-				"name":"constant.language",
-				"match":"constan.language"
-			},{
-				"name":"constant.numeric",
-				"match":"constan.numeric"
-			},{
-				"name":"declaration.section entity.name.section",
-				"match":"declaratio.section entity.name.section"
-			},{
-				"name":"declaration.tag",
-				"match":"declaratio.tag"
-			},{
-				"name":"deco.folding",
-				"match":"dec.folding"
-			},{
-				"name":"entity.name.function",
-				"match":"entit.name.function"
-			},{
-				"name":"entity.name.tag",
-				"match":"entit.name.tag"
-			},{
-				"name":"entity.name.type",
-				"match":"entit.name.type"
-			},{
-				"name":"entity.other.attribute-name",
-				"match":"entit.other.attribute-name"
-			},{
-				"name":"entity.other.inherited-class",
-				"match":"entit.other.inherited-class"
-			},{
-				"name":"invalid",
-				"match":"invalid"
-			},{
-				"name":"invalid.deprecated.trailing-whitespace",
-				"match":"invali.deprecated.trailing-whitespace"
-			},{
-				"name":"keyword",
-				"match":"keyword"
-			},{
-				"name":"keyword.control.import",
-				"match":"keywor.control.import"
-			},{
-				"name":"keyword.operator",
-				"match":"keywor.operator"
-			},{
-				"name":"markup.heading",
-				"match":"marku.heading"
-			},{
-				"name":"markup.list",
-				"match":"marku.list"
-			},{
-				"name":"markup.quote",
-				"match":"marku.quote"
-			},{
-				"name":"meta.embedded",
-				"match":"met.embedded"
-			},{
-				"name":"meta.preprocessor",
-				"match":"met.preprocessor"
-			},{
-				"name":"meta.section entity.name.section",
-				"match":"met.section entity.name.section"
-			},{
-				"name":"meta.tag",
-				"match":"met.tag"
-			},{
-				"name":"storage",
-				"match":"storage"
-			},{
-				"name":"storage.type.method",
-				"match":"storag.type.method"
-			},{
-				"name":"string",
-				"match":"string"
-			},{
-				"name":"string source",
-				"match":"strin source"
-			},{
-				"name":"string.unquoted",
-				"match":"strin.unquoted"
-			},{
-				"name":"support.class",
-				"match":"support.class"
-			},{
-				"name":"support.constant",
-				"match":"support.constant"
-			},{
-				"name":"support.function",
-				"match":"support.function"
-			},{
-				"name":"support.type",
-				"match":"support.type"
-			},{
-				"name":"support.variable",
-				"match":"support.variable"
-			},{
-				"name":"text source",
-				"match":"text source"
-			},{
-				"name":"variable",
-				"match":"variable"
-			},{
-				"name":"variable.language",
-				"match":"variabl.language"
-			},{
-				"name":"variable.other",
-				"match":"variabl.other"
-			},{
-				"name":"variable.parameter",
-				"match":"variabl.parameter"
-			},{
-
-				"name":"token.error-token",
-				"match":"token.error-token"
-			},{
-				"name":"constant.character",
-				"match":"constan.character"
-			},{
-				"name":"brackets",
-				"match":"brackets"
-			},{
-				"name":"token.warn-token",
-				"match":"token.warn-token"
-			},{
-				"name":"constant.numeric",
-				"match":"constant.numeric"
-			},{
-				"name":"meta.diff",
-				"match":"meta.diff"
-			},{
-				"name":"token.info-token",
-				"match":"token.info-token"
-			},{
-				"name":"constant.numeric.line-number.find-in-files - match",
-				"match":"constant.numeric.line-number.find-in-files - match"
-			},{
-				"name":"markup.inline",
-				"match":"markup.inline"
-			}]
-		}
-		
+		}	
 	},
 	"scopeName": "source.cmg"
 }

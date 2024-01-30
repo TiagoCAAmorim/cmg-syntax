@@ -19,15 +19,17 @@ All GEM, IMEX and STARS **keywords** are listed (2023.10 version). For this a ke
 Some **keywords** have a unique highlighting scheme: INCLUDE, STOP, CLOSED, TRIGGER, DATE, TIME. A INCLUDE will only be highlighted if the filename has quotes.  
 Three consecutive numbers will always be highlighted as a **cell**.
 
-<!-- Example:
-
-\!\[feature X\]\(images/feature-x.png\) -->
+![Example file](/extra/test_25pc.png "Example file")
 
 ## Requirements
 
-It is not a strict requirement, but it is recommended to use the [One Monokai](https://marketplace.visualstudio.com/items?itemName=azemoh.one-monokai) theme. Other themes might work, but the development of this highlighter used One Monokai.
+It is not a strict requirement, but it is recommended to use the [One Monokai](https://marketplace.visualstudio.com/items?itemName=azemoh.one-monokai) theme. Other themes might work, but the development of this highlighter focused One Monokai.
 
 ## Release Notes
+
+### 0.0.2
+
+Adjusted color scheme for better compatibility with other themes.
 
 ### 0.0.1
 

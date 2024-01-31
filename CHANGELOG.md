@@ -4,6 +4,12 @@ All notable changes to the "cmg-syntax" extension will be documented in this fil
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [0.0.5] - 2024-01-31
+
+### Changed
+
+- Searches for additional options for keywords like TRIGGER.
+
 ## [0.0.4] - 2024-01-30
 
 ### Changed

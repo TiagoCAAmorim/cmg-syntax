@@ -27,6 +27,10 @@ It is not a strict requirement, but it is recommended to use the [One Monokai](h
 
 ## Release Notes
 
+### 0.0.5
+
+Searches for additional options for keywords like TRIGGER.
+
 ### 0.0.4
 
 Automatically reads keywords and options from CMG manuals.

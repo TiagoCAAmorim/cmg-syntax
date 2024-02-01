@@ -4,7 +4,7 @@
   "description": "CMG simulation files syntax highlighting",
   "repository": "https://github.com/TiagoCAAmorim/cmg-syntax",
 	"publisher": "tiagocaamorim",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "engines": {
     "vscode": "^1.50.0"
   },
